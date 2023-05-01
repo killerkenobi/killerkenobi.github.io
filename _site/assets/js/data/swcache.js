@@ -1,40 +1,40 @@
 const resource = [
     /* --- CSS --- */
-    '/assets/css/style.css',
+    '/killerkenobi.github.io/assets/css/style.css',
 
     /* --- PWA --- */
-    '/app.js',
-    '/sw.js',
+    '/killerkenobi.github.io/app.js',
+    '/killerkenobi.github.io/sw.js',
 
     /* --- HTML --- */
-    '/index.html',
-    '/404.html',
+    '/killerkenobi.github.io/index.html',
+    '/killerkenobi.github.io/404.html',
 
     
-        '/categories/',
+        '/killerkenobi.github.io/categories/',
     
-        '/tags/',
+        '/killerkenobi.github.io/tags/',
     
-        '/archives/',
+        '/killerkenobi.github.io/archives/',
     
-        '/about/',
+        '/killerkenobi.github.io/about/',
     
 
     /* --- Favicons & compressed JS --- */
     
     
-        '/assets/img/favicons/android-chrome-192x192.png',
-        '/assets/img/favicons/android-chrome-512x512.png',
-        '/assets/img/favicons/apple-touch-icon.png',
-        '/assets/img/favicons/favicon-16x16.png',
-        '/assets/img/favicons/favicon-32x32.png',
-        '/assets/img/favicons/favicon.ico',
-        '/assets/img/favicons/mstile-150x150.png',
-        '/assets/js/dist/categories.min.js',
-        '/assets/js/dist/commons.min.js',
-        '/assets/js/dist/misc.min.js',
-        '/assets/js/dist/page.min.js',
-        '/assets/js/dist/post.min.js'
+        '/killerkenobi.github.io/assets/img/favicons/android-chrome-192x192.png',
+        '/killerkenobi.github.io/assets/img/favicons/android-chrome-512x512.png',
+        '/killerkenobi.github.io/assets/img/favicons/apple-touch-icon.png',
+        '/killerkenobi.github.io/assets/img/favicons/favicon-16x16.png',
+        '/killerkenobi.github.io/assets/img/favicons/favicon-32x32.png',
+        '/killerkenobi.github.io/assets/img/favicons/favicon.ico',
+        '/killerkenobi.github.io/assets/img/favicons/mstile-150x150.png',
+        '/killerkenobi.github.io/assets/js/dist/categories.min.js',
+        '/killerkenobi.github.io/assets/js/dist/commons.min.js',
+        '/killerkenobi.github.io/assets/js/dist/misc.min.js',
+        '/killerkenobi.github.io/assets/js/dist/page.min.js',
+        '/killerkenobi.github.io/assets/js/dist/post.min.js'
 ];
 
 /* The request url with below domain will be cached */
