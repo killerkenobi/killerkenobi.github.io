@@ -1,6 +1,6 @@
 self.importScripts('/killerkenobi.github.io/assets/js/data/swcache.js');
 
-const cacheName = 'chirpy-20230501.171328';
+const cacheName = 'chirpy-20230501.172833';
 
 function verifyDomain(url) {
     for (const domain of allowedDomains) {
