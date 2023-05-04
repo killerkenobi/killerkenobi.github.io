@@ -20,7 +20,7 @@ timezone: America/New_York
 
 title: DevSecOps HQ # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the sub-title
+tagline: A place to organize my thoughts # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A place to organize my thoughts and focus on security, technology, and technical writing.
