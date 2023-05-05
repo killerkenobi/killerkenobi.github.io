@@ -58,7 +58,6 @@ docker build -t aws-fips-test -f Dockerfile .
 ```
 After building the image I ran it using Docker and hopped into a terminal to prove that FIPS was enabled. I validated fips was installed and working by running the below commands.
 
-![fips_evidence](./blog_images/fips_docker_image.png)
 
 The simple tests I ran in the screenshot above can be transfered over to a pipeline.yaml file and run in a separate test stage or during the build stage itself. You could also create a simple script that could be quickly run on the image. The only challenge would be to ensure you have a running container and are actually exectuting the test commands on that running container.
 
