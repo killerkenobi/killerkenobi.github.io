@@ -1,25 +1,12 @@
 ---
 title: Creating a fips-y docker environment using amazonlinux
+author: anthony
 date: 2023-05-04 20:30:00 -400
 categories: [docker,compliance]
 tags: [aws,compliance,docker]
 ---
 # Creating a fips-y docker environment using amazonlinux v2
-May 04, 2023 -- *May the fourth be with you :)* 
-
-```
-            .-.
-           |o,o|
-        ,| _\=/_      .-""-.
-        ||/_/_\_\    /[] _ _\
-        |_/|(_)|\\  _|_o_LII|_
-           \._./// / | ==== | \
-           |\_/|"` |_| ==== |_|
-           |_|_|    ||" ||  ||
-           |-|-|    ||LI  o ||
-           |_|_|    ||'----'||
-          /_/ \_\  /__|    |__\
-```
+May 04, 2023
 
 If you are a security professional working for a public or private company with U.S. government contracts then chances are you have done compliance work at some point in your career. You have also probably heard of compliance framework examples like NIST, CIS, PCI, and FedRAMP. I frequently work with docker and kubernetes and have recently started deep-diving into FedRAMP compliance. I recently ran into a niche issue that I would like to shed some light on and hopefully guide others through as well.
 
@@ -71,6 +58,23 @@ docker build -t aws-fips-test -f Dockerfile .
 ```
 After building the image I ran it using Docker and hopped into a terminal to prove that FIPS was enabled. I validated fips was installed and working by running the below commands.
 
-![fips_evidence](images/fips_docker_image.png)
+![fips_evidence](./blog_images/fips_docker_image.png)
 
 The simple tests I ran in the screenshot above can be transfered over to a pipeline.yaml file and run in a separate test stage or during the build stage itself. You could also create a simple script that could be quickly run on the image. The only challenge would be to ensure you have a running container and are actually exectuting the test commands on that running container.
+
+
+*May the fourth be with you :)* 
+
+```
+            .-.
+           |o,o|
+        ,| _\=/_      .-""-.
+        ||/_/_\_\    /[] _ _\
+        |_/|(_)|\\  _|_o_LII|_
+           \._./// / | ==== | \
+           |\_/|"` |_| ==== |_|
+           |_|_|    ||" ||  ||
+           |-|-|    ||LI  o ||
+           |_|_|    ||'----'||
+          /_/ \_\  /__|    |__\
+```
