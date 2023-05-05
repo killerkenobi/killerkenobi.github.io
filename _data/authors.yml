@@ -1,0 +1,10 @@
+# -------------------------------------
+# {author_id}:
+#   name: {full name}
+#   twitter: {twitter_of_author}
+#   url: {homepage_of_author}
+# -------------------------------------
+
+anthony:
+  name: Anthony A.
+  url: https://github.com/killerkenobi/
