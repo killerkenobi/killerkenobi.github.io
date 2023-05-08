@@ -113,7 +113,7 @@ RUN install commands that require root
 USER testUser
 ```
 
-I hope I was able to provide some guidance on making docker container images FIPS compliant. Thanks for reading!
+
 
 ----------------
 *Also, May the fourth be with you :)* 
