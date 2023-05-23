@@ -3,5 +3,5 @@
 
 I am using this repo to serve my blog hosted on GitHub pages. I am new to blogging and web development in general so this is very much a work in progress.
 
-I work as a DevSecOps engineer so I like to write about DevOps, security, and other technology-focused topics. I like to take lessones learned from my workday and share them so others can avoid the mistakes I make :)
+I work as a DevSecOps engineer so I like to write about DevOps, security, and other technology-focused topics. I like to take lessons learned from my workday and share them so others can experience some new material and avoid the mistakes I make :)
 
