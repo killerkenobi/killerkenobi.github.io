@@ -1,10 +1,6 @@
----
-title: Falco Dockerfile on a Diet
-author: anthony
-date: 2024-04-24 18:00:00 -400
-categories: [docker,falco,efficiency]
-tags: [docker,security,dockerfile,docker-optimization]
----
+# Falco Dockerfile on a Diet
+April 24, 2024
+
 [Falco](https://github.com/falcosecurity/falco) is an open-source tool that can detect and alert on abnormal behavior and potential security threats in real-time. Its large number of configuration options make it so anyone from a single security researcher to a fortune 500 company can deploy Falco to their environment. I have personally been working with the open-source version of Falco for several years and have seen the tool and the community grow so much over that time. So many new features and product offerings have been created and are continuing to be developed.
 
 In this article I want to focus on one part of Falco in particular, specifically the distroless no-driver Docker image that was made available in [0.36.0](https://github.com/falcosecurity/falco/releases/tag/0.36.0). Distroless images are Docker images that only contain elements essential to running a specific application. From a security standpoint, distroless images can be considered "safer" to use in a given environment as there are less dependencies installed on the image to compromise. Furthermore, distroless images are oftentimes easier to patch and maintain as they have a smaller attack surface that you would need to worry about in your production environment.

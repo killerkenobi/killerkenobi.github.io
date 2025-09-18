@@ -1,10 +1,3 @@
----
-title: Docker Forensics pt.1 - Leaking Secrets
-author: anthony
-date: 2023-05-14 10:30:00 -400
-categories: [docker,image_forensics]
-tags: [image_forensics,docker,security]
----
 # Docker Forensics pt.1 - Leaking Secrets
 May 14, 2023
 

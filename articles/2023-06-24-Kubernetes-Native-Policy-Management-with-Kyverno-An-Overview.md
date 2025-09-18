@@ -1,10 +1,4 @@
----
-title: Kubernetes Native Policy Management with Kyverno - An Overview
-author: anthony
-date: 2023-06-24 5:20:00 -400
-categories: [kyverno,kubernetes]
-tags: [kyverno,kubernetes,open-source]
----
+# Kubernetes Native Policy Management with Kyverno - An Overview
 June 24, 2023
 
 ## The Kubernetes Security Problem

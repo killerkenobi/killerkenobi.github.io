@@ -1,10 +1,3 @@
----
-title: Creating a fips-y docker environment using amazonlinux
-author: anthony
-date: 2023-05-04 20:30:00 -400
-categories: [docker,compliance]
-tags: [aws,compliance,docker]
----
 # Creating a fips-y docker environment using amazonlinux v2
 May 04, 2023
 

@@ -1,10 +1,4 @@
----
-title: You Are Compliant but Not Secure
-author: anthony
-date: 2023-08-05 11:30:00 -400
-categories: [opinion,compliance]
-tags: [compliance,security]
----
+# You Are Compliant but Not Secure
 August 05, 2023
 
 If you have ever had to procure a service from a SaaS company as a security professional you have probably been bombarded by sales and marketing tactics centered around security and compliance. For example, companies will be sure to work into their advertising that they are PCI or HIPAA or SOCII compliant either on their website or during a presentation. I have even seen this type of marketing material pushed to direct messages on LinkedIn. All too often people unfamiliar with sales tactics or the security industry will take these compliance certifications at face value without digging further. Such a practice can prove costly in the end.

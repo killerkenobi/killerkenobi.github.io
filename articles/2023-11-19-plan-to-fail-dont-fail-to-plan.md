@@ -1,10 +1,5 @@
----
-title: Plan to Fail, Don't Fail to Plan
-author: anthony
-date: 2023-11-19 13:30:00 -400
-categories: [agile,leadership]
-tags: [management,leadership,agile]
----
+# Plan to Fail, Don't Fail to Plan
+November 19, 2023
 
 > This is the first article in a series that I will be reflecting on what I have learned in the past few years of working at tech companies
 > I started working in the private sector shortly after graduating college. I quickly learned that a good college teaches you how to learn 
@@ -13,6 +8,7 @@ tags: [management,leadership,agile]
 > with little experience in a fast-paced environment.
 
 ---
+
 Starting off as a young professional in a tech company, I regularly felt disorganized and disengaged from my colleagues and the organization as a whole. I often wondered how my coworkers on other teams were able to stay on task (or appear they were). The team I was on did not have regularly planned work, rather, it was extremely sporadic. When the workload was light my teammates and I would pretty much do whatever we wanted. When the workload was being piled on we were working on anything the other engineering teams wanted nothing to do with. I was quickly overwhelmed and frustrated by not having any idea how my work contributed to making the company better.
 
 As the team developed over the course of several months my boss decided to instill the agile development methodology on my team. The idea was our team's schedule would align with other engineering teams that were also using agile which would get us the help we needed on tough projects. Our conversion included moving to use scrum and working in two week sprints. Story pointing tickets were also introduced along with ticket grooming sessions. This worked great until the team was once again overwhelmed by other teams tossing random work our direction with no warning. Everything was a high priority and nobody seemed to care whether my team's sprint got blown up or not. It felt like I was working at a startup again.
