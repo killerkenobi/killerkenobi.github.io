@@ -280,7 +280,7 @@
            try {
                 const articlePath = `${ARTICLES_DIRECTORY}/${articleName}.md`;
                 // Use a different URL format for fetching raw file content
-                const rawUrl = `https://raw.githubusercontent.com/${GITHUB_USERNAME}/${GITHUB_REPONAME}/main/${articlePath}`;
+                const rawUrl = `https://raw.githubusercontent.com/${GITHUB_USERNAME}/${GITHUB_REPONAME}/master/${articlePath}`;
                 const response = await fetch(rawUrl);
                  if (!response.ok) {
                    throw new Error(`Could not fetch the article. Make sure the file exists and the path is correct.`);
