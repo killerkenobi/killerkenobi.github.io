@@ -7,7 +7,7 @@ For those interested, I would recommend reading through Charlie Eriksen's [Bugs 
 
 ### Initial Observations:
 1. There are over 100 modules in this variant of the malicious code.
-    - See the Module Analysis section below for more information.
+    - See the Module Analysis section below for more information on the items that I found interesting.
 2. The malware utilized the /tmp directory to silently run helper scripts in the background in separate threads.
 3. This malware appears to have been written with the help of, or 100% by, AI as there is frequent repetitive code AND formatted human-readable outputs in a malware script that is not intended to be read by humans.
     - There is also evidence of symbols / emojis in output which is a telltale sign of AI writing at least some of the code (see screenshot below).
@@ -15,6 +15,9 @@ For those interested, I would recommend reading through Charlie Eriksen's [Bugs 
     ![shai-hulud-bash-symbols](/images/shai-hulud-bash-symbols.png)
 4. The main method to exfiltrate data was a hard-coded [webhook.site](https://docs.webhook.site/) URL. Webhook.site gives users a free, unique, random URL and e-mail address. Everything that's sent to these addresses are shown instantly. With this address, users can test and debug webhooks and HTTP requests. But this webhook can be easily taken down and is not persistent unless a higher tier of service is paid for. This struck me as strange given the amount of effort that was put into the propogation of the worm itself.
 5. The overall code structure is extremely nested and loops over itself unnecessarily (functions calling other functions calling other functions).
+6. The malicious code spread very quickly to a large variety of other npm packages
+  - It will likely take a long time before this malware will be considered "contained".
+  - See [npm Malware Outbreak: Tinycolor and CrowdStrike Packages Compromised](https://www.endorlabs.com/learn/npm-malware-outbreak-tinycolor-and-crowdstrike-packages-compromised) from Endor Labs containing a list of compromised packages and their status.
 
 ### Primary Payload:
 The core malicious payload in this variant of the analyzed malware is a GitHub Actions workflow injection attack that steals all repository secrets. The attack vector includes:
