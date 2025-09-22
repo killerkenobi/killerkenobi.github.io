@@ -15,9 +15,9 @@ For those interested, I would recommend reading through Charlie Eriksen's [Bugs 
     ![shai-hulud-bash-symbols](/images/shai-hulud-bash-symbols.png)
 4. The main method to exfiltrate data was a hard-coded [webhook.site](https://docs.webhook.site/) URL. Webhook.site gives users a free, unique, random URL and e-mail address. Everything that's sent to these addresses are shown instantly. With this address, users can test and debug webhooks and HTTP requests. But this webhook can be easily taken down and is not persistent unless a higher tier of service is paid for. This struck me as strange given the amount of effort that was put into the propogation of the worm itself.
 5. The overall code structure is extremely nested and loops over itself unnecessarily (functions calling other functions calling other functions).
-6. The malicious code spread very quickly to a large variety of other npm packages
-  - It will likely take a long time before this malware will be considered "contained".
-  - See [npm Malware Outbreak: Tinycolor and CrowdStrike Packages Compromised](https://www.endorlabs.com/learn/npm-malware-outbreak-tinycolor-and-crowdstrike-packages-compromised) from Endor Labs containing a list of compromised packages and their status.
+6. The malicious code spread very quickly to a large variety of other npm packages.
+    - It will likely take a long time before this malware will be considered "contained".
+    - See [npm Malware Outbreak: Tinycolor and CrowdStrike Packages Compromised](https://www.endorlabs.com/learn/npm-malware-outbreak-tinycolor-and-crowdstrike-packages-compromised) from Endor Labs containing a list of compromised packages and their status.
 
 ### Primary Payload:
 The core malicious payload in this variant of the analyzed malware is a GitHub Actions workflow injection attack that steals all repository secrets. The attack vector includes:
