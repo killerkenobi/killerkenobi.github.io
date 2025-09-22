@@ -1,6 +1,8 @@
 # The Commit Log
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+![README-logo](/images/README-logo.png)
+
 Welcome to The Commit Log, a space where I explore the intricate worlds of software engineering, cybersecurity, and other technology-focused topics. This repository hosts both the content and the minimalist code that powers my website.
 
 ## About The Content Of This Blog
