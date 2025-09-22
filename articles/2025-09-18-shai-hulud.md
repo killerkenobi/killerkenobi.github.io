@@ -240,7 +240,7 @@ AWS Service Protocol Modules (200-1000).
 
 Several other helper functions are called from this function:
 
-```JavaScript
+```javascript
 var F = n(7069),      // Core endpoint functions registry
     te = n(75481),    // S3 bucket validation utilities  
     re = n(72696),    // ARN parsing utilities
@@ -251,7 +251,7 @@ var F = n(7069),      // Core endpoint functions registry
 
 Several other helper functions are called from this function:
 
-```JavaScript 
+```javascript
 var F = n(77113),     // Core SigV4 signing utilities
     te = n(21006),    // SigV4A (multi-region) signing
     re = n(88157),    // Authentication scheme preferences  
@@ -414,27 +414,18 @@ te = n(36710); // Type protos
 
 **Module 1254: AWS SDK User Agent App ID Configuration** - This module configures User Agent application identifiers that AWS uses to track and identify SDK usage, which the malware can manipulate for stealth and evasion.
 - Module attack chain:
-
-```
-Module 463/932 (Process Access)
-    ↓ (Harvests environment variables)
-Module 1254 (UA Config) 
-    ↓ (Configures identity sources)
-Module 44683 (Intermediate Handler)
-    ↓ (Processes configuration)
-Module 46624 (Identity Resolver)
-    ↓ (Uses victim's own identity)
-STS Client (Module 1131)
-    ↓ (Makes requests with stolen identity)
-AWS APIs (Credential theft with perfect camouflage)
-```
+  1. Module 463/932 (Process Access) - (Harvests environment variables)
+  2. Module 1254 (UA Config) - (Configures identity sources)
+  3. Module 44683 (Intermediate Handler) - (Processes configuration)
+  4. Module 46624 (Identity Resolver) - (Uses victim's own identity)
+  5. STS Client (Module 1131) - (Makes requests with stolen identity)
+  6. AWS APIs (Credential theft with camouflage)
 
 - Detection Evasion
     - Blends with enterprise traffic using corporate app identifiers in CloudTrail logs.
         - Module 1254 is used by Module 44863 to set user agent headers to appear as legitimate AWS console traffic (looking at “DEFAULT_UA_APP_ID”). Module 44863 then looks to module 46624.
         - Module 46624 creates the app ID from legitimate config files that were previously set up by the victim to mimic the victim.
     - Avoids anomaly detection by using expected User Agent patterns.
-
 
 # How to Protect Youself:
 1. Look through npm dependencies in your project and verify whether any of them were compromised.
