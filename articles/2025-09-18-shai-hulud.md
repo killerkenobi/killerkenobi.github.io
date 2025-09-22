@@ -181,7 +181,7 @@ I also wanted to share the structure of the data that would have been base64 enc
     },
       "results": {
         "success": false,
-        "output": "{TONS OF STUFF REDACTED THAT WAS FOUND BY TRUFFLEHOG.}
+        "output": "{TONS OF STUFF REDACTED THAT WAS FOUND BY TRUFFLEHOG.}"
     },
     "npm": {
       "authenticated": false,
@@ -290,7 +290,7 @@ jobs:
         CONTENTS: ${{ toJSON(secrets) }}
 ```
 
-The endpoint that the attackers were trying to exfiltrate data to was "hxxps://webhook[.]site/bb8ca5f6-4175-45d2-b042-fc9ebb8170b7". This link was promptly shut down. It is unclear whether any data was sucessfully exfiltrated using this link.
+The endpoint that the attackers were trying to exfiltrate data to was `hxxps://webhook[.]site/bb8ca5f6-4175-45d2-b042-fc9ebb8170b7`. This link was promptly shut down. It is unclear whether any data was sucessfully exfiltrated using this link.
 
 **GitHub attack flow:**
 

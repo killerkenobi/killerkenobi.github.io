@@ -35,14 +35,13 @@
        .prose p { margin-bottom: 1em; }
        .prose a { color: #3b82f6; text-decoration: none; }
        .prose a:hover { text-decoration: underline; }
-       .prose code {
-           background-color: #f3f4f6;
-           padding: 0.2em 0.4em;
-           margin: 0;
-           font-size: 85%;
-           border-radius: 3px;
-           font-family: monospace;
-       }
+       .prose :not(pre) > code {
+            background-color: #374151; /* gray-700 */
+            color: #d1d5db; /* gray-300 */
+            padding: 0.2em 0.4em;
+            border-radius: 0.25rem;
+            font-size: 0.9em;
+        }
        .prose pre {
            background-color: #1f2937;
            color: #d1d5db;
