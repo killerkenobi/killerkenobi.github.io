@@ -15,7 +15,7 @@ An AI system should never be given unsupervised access to API keys or other syst
 ## Secure AI Architecture
 This architectural model is based off of using the terminal-based open source AI coding agent, [opencode](https://opencode.ai/). This model utilizes several concepts that are part of the opencode ecosystem such as [Agents](https://opencode.ai/docs/agents/) and [Skills](https://opencode.ai/docs/skills/). Combined with a separate API Server, Agents and Skills can be configured to allow AI infrastructure to safely access proprietary data in a secure environment.
 
-![secure ai architecture diagram](/images/secure-ai-architecture/scng-ai-framework.png)
+![secure ai architecture diagram](/images/secure-ai-architecture/secure-ai-framework.png)
 
 1. **AI Server:** The brain that requests actions (e.g., "Read Jira Ticket"). There are no credentials stored on this system, only Skills that the AI model can use to interact wit the API Server.
 2. **API Server:** The secure server that holds the API keys, validates the requests from the AI Server, and calls the external services (Jira, GitHub, Slack, etc...).
